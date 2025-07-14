@@ -1,0 +1,25 @@
+{
+  "name": "tasksreact",
+  "version": "1.0.0",
+  "description": "Aplicación Básica de Tareas con JavaScript, Node.js y React",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd backend && npm run dev",
+    "client:start": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client:start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lautaroVal/tasksReact.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lautaroVal/tasksReact/issues"
+  },
+  "homepage": "https://github.com/lautaroVal/tasksReact#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

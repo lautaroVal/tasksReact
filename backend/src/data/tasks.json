@@ -1,37 +1,10 @@
 [
   {
-    "id": 1,
-    "title": "Limpiar auto",
-    "description": "Limpieza de autos",
+    "id": "6cf6cb7c-fc18-49c6-a4ff-1bcb9cff1d81",
+    "title": "Barrer casa",
+    "description": "Barrer la cocina",
     "completed": true,
-    "createdAt": "10-05-2021"
-  },
-  {
-    "id": "bb02ca9e-689c-40f2-9c30-22a0ae1d5bfd",
-    "title": "Aprender Express",
-    "description": "Estudiar middleware y rutas",
-    "completed": false,
-    "createdAt": 1752342766396
-  },
-  {
-    "id": "1512005c-3aec-4cb1-bdad-c97af4e4a30e",
-    "title": "Aprender Express",
-    "description": "Estudiar middleware y rutas",
-    "completed": false,
-    "createdAt": 1752361258404
-  },
-  {
-    "id": "e0baa321-16a1-4e81-babc-a530f640db51",
-    "title": "Arreglar Moto",
-    "description": "Llevar moto al mecanico",
-    "completed": true,
-    "createdAt": 1752361309825
-  },
-  {
-    "id": "1ffa5d29-817b-4457-881e-aa7683c86890",
-    "title": "Arreglar Bici",
-    "description": "Llevar Bici al bicicletero",
-    "completed": true,
-    "createdAt": "2025-07-12T23:22:20.373Z"
+    "createdAt": "2025-07-14T02:56:14.017Z",
+    "updatedAt": "2025-07-14T04:54:22.444Z"
   }
 ]
