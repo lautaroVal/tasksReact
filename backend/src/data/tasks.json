@@ -1,10 +1,17 @@
 [
   {
     "id": "6cf6cb7c-fc18-49c6-a4ff-1bcb9cff1d81",
-    "title": "Barrer casa",
-    "description": "Barrer la cocina",
+    "title": "Barrer ",
+    "description": "Barrer la cocina y comedor",
     "completed": true,
     "createdAt": "2025-07-14T02:56:14.017Z",
-    "updatedAt": "2025-07-14T04:54:22.444Z"
+    "updatedAt": "2025-07-14T05:21:57.844Z"
+  },
+  {
+    "id": "d7de2b27-0610-4e3a-9590-9300f465c28a",
+    "title": "Aprender TypeScript",
+    "description": "Estudiar con la academia For It ",
+    "completed": false,
+    "createdAt": "2025-07-14T05:22:41.180Z"
   }
 ]

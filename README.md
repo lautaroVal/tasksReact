@@ -1,2 +1,52 @@
-# tasksReact
-Aplicación Básica de Tareas con JavaScript, Node.js y React 
+# App de Tareas
+
+Proyecto de manejo de Tareas construido con React, TypeScript y TailwindCSS.
+
+## Screenshots
+
+![App Screenshot](/taskAppScreen.png)
+
+## Installation and use
+
+1. Clona el repositorio:
+
+```bash
+  git clone https://github.com/lautaroVal/tasksReact.git
+  cd tasksReact
+```
+
+2. Instala las dependencias:
+
+```bash
+  cd backend
+  npm install
+
+  cd ../frontend
+  npm install
+
+  cd ..
+```
+
+3. Ejecutar la aplicación:
+
+```bash
+  npm run dev
+```
+
+Esto levantará:
+
+- 📡 Backend en http://localhost:3000
+
+- 💻 Frontend en http://localhost:5173
+
+Ambos servicios se ejecutan en paralelo gracias a concurrently.
+
+## 🧩 Features
+
+- 📋 Ver tareas
+
+- ➕ Agregar tarea
+
+- ✏️ Editar tarea
+
+- ❌ Eliminar tarea
