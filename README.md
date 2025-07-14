@@ -53,7 +53,7 @@ Ambos servicios se ejecutan en paralelo gracias a concurrently.
 
 
 
-### 📦 Colección Postman
+### 📦 Collection Postman
 
 Para probar la API, podés importar la colección `postman_collection.json` en Postman.
 
