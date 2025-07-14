@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react"
 import type { Tarea, TareaRaw } from "../types"
 
+const apiUrlBase =  import.meta.env.VITE_API_URL_BASE;
+
 function parseTarea(t: TareaRaw): Tarea {
   return {
     ...t,
@@ -41,7 +43,7 @@ export default function TaskForm({ setTareas, tarea, setTarea } : TaskFormProps)
 
         try {
             if (tarea?.id) {
-                const response = await fetch(`http://localhost:3000/tasks/api/tasks/${tarea.id}`, {
+                const response = await fetch(`${apiUrlBase}/api/tasks/${tarea.id}`, {
                     method: "PUT",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(nuevaTarea),
@@ -52,7 +54,7 @@ export default function TaskForm({ setTareas, tarea, setTarea } : TaskFormProps)
                 setTareas(tareas => tareas.map(t => t.id === tareaFormateada.id ? tareaFormateada  : t))
                 setTarea(null)
             } else {
-                const response = await fetch("http://localhost:3000/tasks/api/tasks", {
+                const response = await fetch(`${apiUrlBase}/api/tasks`, {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(nuevaTarea),

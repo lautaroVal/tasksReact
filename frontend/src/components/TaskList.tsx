@@ -1,18 +1,18 @@
 import TaskItem from "./TaskItem";
 import type { Tarea } from "../types"
 
-type TaskFormProps = {
+type TaskListProps  = {
   tareas: Tarea[]
   setTarea: React.Dispatch<React.SetStateAction<Tarea | null>>
   eliminarTarea: (id: string) => void
 }
 
-export default function TaskList({tareas, setTarea, eliminarTarea}: TaskFormProps) {
+export default function TaskList({tareas, setTarea, eliminarTarea}: TaskListProps ) {
     //console.log(tareas);
     
   return (
       <div className="md:w-1/2 lg:w-3/5 md:h-screen overflow-y-scroll">
-      {tareas && tareas.length ? (
+      {tareas.length ? (
         <>
           <h2 className="font-black text-3xl text-center">
             Listado de Tareas

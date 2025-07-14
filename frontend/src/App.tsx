@@ -4,6 +4,8 @@ import TaskForm from "./components/TaskForm"
 import TaskList from "./components/TaskList"
 import type { Tarea, TareaRaw} from "./types"
 
+const apiUrlBase =  import.meta.env.VITE_API_URL_BASE;
+
 function parseTarea(t: TareaRaw): Tarea {
   return {
     ...t,
@@ -15,19 +17,19 @@ function parseTarea(t: TareaRaw): Tarea {
 function App() {
   const [tareas, setTareas] = useState<Tarea[]>([])
   const [tarea, setTarea] = useState<Tarea | null>(null)
-
+    
   useEffect(() => {
-    fetch('http://localhost:3000/tasks/api/tasks')
+    fetch(`${apiUrlBase}/api/tasks`)
     .then(response => response.json())
     .then(data => {
-       const tareas = data.data.totalTasks.map(parseTarea);
-      setTareas(tareas)})
+       const tareasParseadas = data.data.totalTasks.map(parseTarea);
+      setTareas(tareasParseadas)})
     .catch(error => console.error("Error cargando tareas", error))
   }, [])
 
   const eliminarTarea = (id: string) => {
     try {
-      fetch(`http://localhost:3000/tasks/api/tasks/${id}`, {
+      fetch(`${apiUrlBase}/api/tasks/${id}`, {
         method: 'DELETE'
       })
       setTareas(prev => prev.filter(t => t.id !== id))

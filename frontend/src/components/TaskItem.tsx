@@ -1,12 +1,12 @@
 import type { Tarea } from "../types"
 
-type TaskFormProps = {
+type TaskItemProps  = {
     tarea: Tarea | null
     setTarea: React.Dispatch<React.SetStateAction<Tarea | null>>
     eliminarTarea: (id: string) => void
 }
 
-export default function TaskItem({ tarea, setTarea, eliminarTarea }: TaskFormProps) {
+export default function TaskItem({ tarea, setTarea, eliminarTarea }: TaskItemProps ) {
         if (!tarea) return null;
         const { title, description, completed, id } = tarea;
     
@@ -17,7 +17,7 @@ export default function TaskItem({ tarea, setTarea, eliminarTarea }: TaskFormPro
     }
     
     return (
-        <div className="mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl">
+        <div className={`mx-5 my-10 bg-white shadow-md px-5 py-10 rounded-xl transition-colors duration-300 ${completed ? 'border-l-8 border-green-500' : ''}`}>
             <p className="font-bold mb-3 text-gray-700 uppercase">
                 Nombre de Tarea: {" "}
                 <span className="font-normal normal-case">{title}</span>
@@ -34,6 +34,7 @@ export default function TaskItem({ tarea, setTarea, eliminarTarea }: TaskFormPro
                     type="checkbox"
                     checked={completed}
                     readOnly 
+                    aria-label="Estado de la tarea"
                 />
             </p>
 
