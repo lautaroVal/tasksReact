@@ -57,6 +57,6 @@ Ambos servicios se ejecutan en paralelo gracias a concurrently.
 
 Para probar la API, podés importar la colección `postman_collection.json` en Postman.
 
-Ruta del archivo: `./docs/postman_collection.json`
+Ruta del archivo: `./docs/API de Tareas - Documentación.postman_collection.json`
 
 ![Documentación - API de Tareas](./docs/API%20de%20Tareas%20-%20Documentación.postman_collection.json)
