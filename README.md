@@ -52,4 +52,4 @@ Ambos servicios se ejecutan en paralelo gracias a concurrently.
 - ❌ Eliminar tarea
 
 
-![Documentación - API de Tareas](./docs/postman_collection.json)
+![Documentación - API de Tareas](./docs/API%20de%20Tareas%20-%20Documentación.postman_collection.json)
