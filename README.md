@@ -53,10 +53,13 @@ Ambos servicios se ejecutan en paralelo gracias a concurrently.
 
 
 
-### 📦 Colección Postman
+## 📦 Colección Postman
 
 Para probar la API, podés importar la colección `postman_collection.json` en Postman.
 
 Ruta del archivo: `./docs/API de Tareas - Documentación.postman_collection.json`
 
 ![Documentación - API de Tareas](./docs/API%20de%20Tareas%20-%20Documentación.postman_collection.json)
+
+## 🧑‍💻 Autor
+Desarrollado por [Lautaro Val](https://github.com/lautaroVal) ☕️
