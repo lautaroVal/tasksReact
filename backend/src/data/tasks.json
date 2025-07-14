@@ -13,5 +13,12 @@
     "description": "Estudiar con la academia For It ",
     "completed": false,
     "createdAt": "2025-07-14T05:22:41.180Z"
+  },
+  {
+    "id": "f4bc89d0-6abe-4ce2-a1f0-8f77c3d24592",
+    "title": "Arreglar Bici",
+    "description": "Llevar Bici al bicicletero",
+    "completed": true,
+    "createdAt": "2025-07-14T05:43:11.609Z"
   }
 ]

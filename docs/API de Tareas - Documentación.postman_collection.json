@@ -1,0 +1,403 @@
+{
+	"info": {
+		"_postman_id": "4467b4a1-ee8b-49c0-92dc-db0b36616b2c",
+		"name": "API de Tareas - Documentación",
+		"description": "La API está hecha con Node.js y Express. Las tareas se guardan en un archivo JSON.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23704527"
+	},
+	"item": [
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "/tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"api",
+								"tasks"
+							]
+						},
+						"description": "Listar todas las tareas."
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/tasks/api/tasks",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"tasks",
+										"api",
+										"tasks"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:5173"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "809"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"329-wIL1bTJXHbiL7tDoIAPGChbNcdY\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Jul 2025 05:44:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"ok\": true,\n        \"status\": 200\n    },\n    \"data\": {\n        \"totalTasks\": [\n            {\n                \"id\": \"6cf6cb7c-fc18-49c6-a4ff-1bcb9cff1d81\",\n                \"title\": \"Barrer \",\n                \"description\": \"Barrer la cocina y comedor\",\n                \"completed\": true,\n                \"createdAt\": \"2025-07-14T02:56:14.017Z\",\n                \"updatedAt\": \"2025-07-14T05:21:57.844Z\"\n            },\n            {\n                \"id\": \"d7de2b27-0610-4e3a-9590-9300f465c28a\",\n                \"title\": \"Aprender TypeScript\",\n                \"description\": \"Estudiar con la academia For It \",\n                \"completed\": false,\n                \"createdAt\": \"2025-07-14T05:22:41.180Z\"\n            },\n            {\n                \"id\": \"ddf807de-aed0-4cef-99fe-699ff583edf7\",\n                \"title\": \"Arreglar Bici\",\n                \"description\": \"Parchar la rueda\",\n                \"completed\": false,\n                \"createdAt\": \"2025-07-14T05:42:14.677Z\",\n                \"updatedAt\": \"2025-07-14T05:44:21.079Z\"\n            },\n            {\n                \"id\": \"f4bc89d0-6abe-4ce2-a1f0-8f77c3d24592\",\n                \"title\": \"Arreglar Bici\",\n                \"description\": \"Llevar Bici al bicicletero\",\n                \"completed\": true,\n                \"createdAt\": \"2025-07-14T05:43:11.609Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/tasks",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"title\": \"Arreglar Bici\",\r\n  \"description\": \"Llevar Bici al bicicletero\",\r\n  \"completed\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/api/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"api",
+								"tasks"
+							]
+						},
+						"description": "Crear una nueva tarea."
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Arreglar Bici\",\r\n  \"description\": \"Llevar Bici al bicicletero\",\r\n  \"completed\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/tasks/api/tasks",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"tasks",
+										"api",
+										"tasks"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:5173"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "610"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"262-Kyx6n40KvtKWXnCdPErkinLCs88\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Jul 2025 05:42:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"ok\": true,\n        \"status\": 201\n    },\n    \"data\": {\n        \"totalTasks\": [\n            {\n                \"id\": \"6cf6cb7c-fc18-49c6-a4ff-1bcb9cff1d81\",\n                \"title\": \"Barrer \",\n                \"description\": \"Barrer la cocina y comedor\",\n                \"completed\": true,\n                \"createdAt\": \"2025-07-14T02:56:14.017Z\",\n                \"updatedAt\": \"2025-07-14T05:21:57.844Z\"\n            },\n            {\n                \"id\": \"d7de2b27-0610-4e3a-9590-9300f465c28a\",\n                \"title\": \"Aprender TypeScript\",\n                \"description\": \"Estudiar con la academia For It \",\n                \"completed\": false,\n                \"createdAt\": \"2025-07-14T05:22:41.180Z\"\n            },\n            {\n                \"id\": \"ddf807de-aed0-4cef-99fe-699ff583edf7\",\n                \"title\": \"Arreglar Bici\",\n                \"description\": \"Llevar Bici al bicicletero\",\n                \"completed\": true,\n                \"createdAt\": \"2025-07-14T05:42:14.677Z\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/tasks/:id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n   \"title\": \"Dentista\",\r\n    \"description\": \"Ir al dentista brackets\",\r\n    \"completed\": true\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/tasks/api/tasks/03ff7c1c-08a3-4674-9d66-eec7a15641bc",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"api",
+								"tasks",
+								"03ff7c1c-08a3-4674-9d66-eec7a15641bc"
+							]
+						},
+						"description": "Actualizar una tarea."
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"title\": \"Arreglar Bici\",\r\n  \"description\": \"Parchar la rueda\",\r\n  \"completed\": false\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/tasks/api/tasks/ddf807de-aed0-4cef-99fe-699ff583edf7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"tasks",
+										"api",
+										"tasks",
+										"ddf807de-aed0-4cef-99fe-699ff583edf7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:5173"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "281"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"119-CE5zEsgx84h5t0cIwlBsycCcC4Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Jul 2025 05:44:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"ok\": true,\n        \"status\": 200,\n        \"msg\": \"Tarea actualizada\"\n    },\n    \"data\": {\n        \"taskUpdated\": {\n            \"id\": \"ddf807de-aed0-4cef-99fe-699ff583edf7\",\n            \"title\": \"Arreglar Bici\",\n            \"description\": \"Parchar la rueda\",\n            \"completed\": false,\n            \"createdAt\": \"2025-07-14T05:42:14.677Z\",\n            \"updatedAt\": \"2025-07-14T05:44:21.079Z\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/tasks/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/tasks/api/tasks/e0baa321-16a1-4e81-babc-a530f640db51",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"tasks",
+								"api",
+								"tasks",
+								"e0baa321-16a1-4e81-babc-a530f640db51"
+							]
+						},
+						"description": "Eliminar una tarea."
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/tasks/api/tasks/ddf807de-aed0-4cef-99fe-699ff583edf7",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"tasks",
+										"api",
+										"tasks",
+										"ddf807de-aed0-4cef-99fe-699ff583edf7"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "http://localhost:5173"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "685"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2ad-4yJgjP0Tx/Y+CHKvDfeDaxu6fkI\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 14 Jul 2025 05:45:17 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"meta\": {\n        \"ok\": true,\n        \"status\": 200,\n        \"msg\": \"Tarea eliminada\"\n    },\n    \"data\": {\n        \"tasks\": [\n            {\n                \"id\": \"6cf6cb7c-fc18-49c6-a4ff-1bcb9cff1d81\",\n                \"title\": \"Barrer \",\n                \"description\": \"Barrer la cocina y comedor\",\n                \"completed\": true,\n                \"createdAt\": \"2025-07-14T02:56:14.017Z\",\n                \"updatedAt\": \"2025-07-14T05:21:57.844Z\"\n            },\n            {\n                \"id\": \"d7de2b27-0610-4e3a-9590-9300f465c28a\",\n                \"title\": \"Aprender TypeScript\",\n                \"description\": \"Estudiar con la academia For It \",\n                \"completed\": false,\n                \"createdAt\": \"2025-07-14T05:22:41.180Z\"\n            },\n            {\n                \"id\": \"f4bc89d0-6abe-4ce2-a1f0-8f77c3d24592\",\n                \"title\": \"Arreglar Bici\",\n                \"description\": \"Llevar Bici al bicicletero\",\n                \"completed\": true,\n                \"createdAt\": \"2025-07-14T05:43:11.609Z\"\n            }\n        ],\n        \"indexDeletedAt\": \"ddf807de-aed0-4cef-99fe-699ff583edf7\"\n    }\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

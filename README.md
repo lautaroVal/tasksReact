@@ -50,3 +50,6 @@ Ambos servicios se ejecutan en paralelo gracias a concurrently.
 - ✏️ Editar tarea
 
 - ❌ Eliminar tarea
+
+
+![Documentación - API de Tareas](./docs/postman_collection.json)
